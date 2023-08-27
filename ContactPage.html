@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Contact Sheet</title>
+</head>
+<body>
+
+    <div class="main-container bg-dark-subtle text-black">
+        <h1 class="shadow-lg p-3 mb-5 bg-body-tertiary rounded text-center">Contact</h1>
+    </div>
+   
+    
+<!--Navigation Bar-->
+
+    <nav class="navbar">
+        <div class="mb-5">
+            <button class="btn btn-outline-dark" class="nav-item">
+                <a class="text-primary-emphasis" href="MyPage.html">Main</a>
+            </button>
+            <button class="btn btn-outline-dark">
+                <a class="text-primary-emphasis" href="ContactPage.html">Contact</a>            
+            </button>
+        </div>
+    </nav> 
+
+<!--Contact Info on a Table-->
+
+    <div class="container text-center fs-2">
+                <table class="table table-striped">
+                    <thead><strong>My Contact Information</strong></thead>
+
+                    <tbody class="fs-5">
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td>347-789-4545</td>
+                        </tr>
+                        <tr>
+                            <td>Email Address:</td>
+                            <td>RaulTestEmail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mailing Address:</td>
+                            <td>1234 SomeStreet Queens, NY 11111</td>
+                        </tr>
+                    </tbody>
+                </table>             
+    </div>
+
+
+<!--If they want to me to reach out - FORM-->
+    <div class="container mt-5 bg-success-subtle">
+            <form action="MyPage.html" onsubmit="alert('We will reach out to you soon. Thanks!')">
+                <div class="row">
+                    <label class="form-label">First Name:</label>
+                    <div>
+                        <input class="form-control" type="text" id="firstName" name="firstName"><br><br>                    
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <label class="form-label">Last Name:</label>
+                    <div>
+                        <input class="form-control" type="text" id="lastName" name="lastName"><br><br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <label class="form-label">Email Address:</label>
+                    <div>
+                        <input class="form-control" type="email" id="emailadd" name="emailadd"><br><br>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+    </div>
+
+
+</body>
+</html>
